@@ -46,11 +46,18 @@ import UIKit
     private func setupButtons() {
         
         // Clears any existing buttons
+        // This is technically inefficient, however, it should only be called once so it doesn't really matter (when everything is first loaded)
         for button in ratingButtons {
             removeArrangedSubview(button)
             button.removeFromSuperview()
         }
         ratingButtons.removeAll()
+        
+        // Load Button Images
+        let bundle = Bundle(for: type(of: self))
+        let filledStar = UIImage(named: "filledStar", in: bundle, compatibleWith: self.traitCollection)
+        let emptyStar = UIImage(named: "emptyStar", in: bundle, compatibleWith: self.traitCollection)
+        let highLightedStar = UIImage(named: "highlightedStar", in: bundle, compatibleWith: self.traitCollection)
         
         for _ in 0..<starCount {
 //        Create the button
