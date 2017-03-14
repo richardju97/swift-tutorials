@@ -21,9 +21,8 @@ class Meal {
     init?(name: String, photo: UIImage?, rating: Int) {
         
         //Initialization failed
-        if name.isEmpty || rating < 0 {
-            return nil
-        }
+        guard !name.isEmpty else { return nil } // name must not be empty
+        guard (rating >= 0) && (rating <= 5) else { return nil } // ratings must be from 0 to 5
         
         //Initialize stored properties
         self.name = name
