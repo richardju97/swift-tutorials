@@ -123,6 +123,7 @@
                         <outlet property="nameTextField" destination="GWc-Kd-vlg" id="j2N-Pr-6MU"/>
                         <outlet property="photoImageView" destination="D4M-SS-aCo" id="uZJ-RQ-8R3"/>
                         <outlet property="ratingControl" destination="haz-1V-pi1" id="eyV-gx-0wq"/>
+                        <outlet property="saveButton" destination="J6u-pW-zdQ" id="KqW-JV-ttG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
