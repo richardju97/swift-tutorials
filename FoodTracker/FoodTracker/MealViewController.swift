@@ -64,7 +64,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         super.prepare(for: segue, sender: sender)
         
         // Configure destination view controller only when the save button is pressed
-        guard let buton = sender as? UIBarButtonItem, button === saveButton else {
+        guard let button = sender as? UIBarButtonItem, button === saveButton else {
             os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
             return
         }
