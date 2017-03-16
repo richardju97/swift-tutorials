@@ -57,7 +57,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Meals" id="6Z5-dX-Mfi">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="gNh-Fm-OzV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="gNh-Fm-OzV">
+                            <connections>
+                                <segue destination="Irc-xK-xxt" kind="presentation" identifier="AddItem" id="HMh-rT-ecR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3d-YV-Vph" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,7 +129,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1039.2" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1978.4000000000001" y="123.68815592203899"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AYa-1V-UqM">
@@ -144,6 +148,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9EO-tM-tfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-537" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Rj-Wc-4qg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Irc-xK-xxt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ydj-aQ-TMV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QOw-yu-l6t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pv3-oV-Lw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.2" y="123.68815592203899"/>
         </scene>
     </scenes>
     <resources>
