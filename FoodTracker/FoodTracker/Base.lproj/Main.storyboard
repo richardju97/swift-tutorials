@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meal Table View Controller-->
+        <!--Your Meals-->
         <scene sceneID="0hH-2D-29W">
             <objects>
                 <tableViewController id="rgg-Zc-AaR" customClass="MealTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,7 +56,9 @@
                             <outlet property="delegate" destination="rgg-Zc-AaR" id="pb4-V3-AVS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6Z5-dX-Mfi"/>
+                    <navigationItem key="navigationItem" title="Your Meals" id="6Z5-dX-Mfi">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="gNh-Fm-OzV"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3d-YV-Vph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
