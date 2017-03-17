@@ -20,8 +20,14 @@ class MealTableViewController: UITableViewController {
         // Use the edit button item provided by the table view controller
         navigationItem.leftBarButtonItem = editButtonItem
         
-        // Load the sample data.
-        loadSampleMeals()
+        // Load any saved meals, othewrise load sample data
+        if let savedMeals = loadMeals() {
+            meals += savedMeals
+        } else {
+            
+            // Load the sample data.
+            loadSampleMeals()
+        }
     }
 
     override func didReceiveMemoryWarning() {
