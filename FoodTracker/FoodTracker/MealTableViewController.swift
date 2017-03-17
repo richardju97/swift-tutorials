@@ -71,6 +71,7 @@ class MealTableViewController: UITableViewController {
             
             // Delete the row from the data source
             meals.remove(at: indexPath.row) // removes meal from the array
+            saveMeals()
             tableView.deleteRows(at: [indexPath], with: .fade) //removes row from table view
             
         } else if editingStyle == .insert {
@@ -149,6 +150,8 @@ class MealTableViewController: UITableViewController {
                 meals.append(meal)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
+            
+            saveMeals()
         }
     }
     
